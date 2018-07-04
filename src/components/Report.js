@@ -52,7 +52,7 @@ class Report extends React.Component{
         let uniqueArr
 
         if(localStorage.getItem('cities')){
-            uniqueArr = JSON.parse(localStorage.getItem('cities'))
+            uniqueArr = JSON.parse(localStorage.getItem('cities')).filter(n => n)
         } else {
             uniqueArr = []
         }
@@ -98,9 +98,7 @@ class Report extends React.Component{
         return (
             <div className="report">
                 <form className= "report--form" onSubmit={this.searchWeather}>
-                    <label> Search Somwehere:  </label>
-                    <input name="city" />
-                    <button type="submit"> search! </button>
+                    <input className="report--input" name="city" />
                 </form>
                 <div className= "report--results">
                 { tempLow || this.props.location.state ? 
@@ -112,7 +110,7 @@ class Report extends React.Component{
                             <p> Night time condition: { conditionNight } </p>
                             <p> Temp Low: { tempLow } ℃ </p>
                         </div>
-                        </div>
+                    </div>
                 :  <p> Search anywhere! </p> }
                 </div>
             </div>

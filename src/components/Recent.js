@@ -19,14 +19,19 @@ class Recent extends React.Component{
         return (
         <div className="recents"> 
             <p> Your recent weather reports: </p>
+            <ul>
             {
                 recentCities?
                 recentCities.map((city, index) => {
-                   return <Link to={{pathname: '/', state: {recentSearch: city} }} key= {index}> { city } </Link>
+                   return <li><Link to={{pathname: '/',
+                            state: {recentSearch: city} }} 
+                            className="recents--link" 
+                            key= {index}> { city } </Link></li>
                 })
                 :
                 <p> No previous searches! </p>
             }
+            </ul>
         </div>
         )
     }

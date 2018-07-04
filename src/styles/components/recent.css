@@ -1,6 +1,26 @@
 .recents{
     display: flex;
-    text-align: center;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100vw;
+    /* border: black solid 0.1rem; */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.recents--link {
+    text-decoration: none;
+    color: orange;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+    display: block;
+  }
+
+.recents--link:hover{
+    font-size: 2rem;
 }

@@ -7,12 +7,12 @@
 
 .report--form{
     width: 100vw;
-    padding: 2rem;
+    padding: 2rem 0em; 
 }
 
 .report--form > input{
     width: 50vw;
-    height: 2rem;
+    text-align: center;
 }
 
 .report--results{
@@ -38,4 +38,9 @@
     background-image: url("https://cdn.pastemagazine.com/www/system/images/photo_albums/weird-weather-/large/10478918024-efdf1e1e47-z.jpg?1384968217")
 }   
 
-
+.report--input{
+    height: 2rem;
+    font-size: 1.5rem;
+    color: orange;
+    text-align: center;
+}
