@@ -1,0 +1,38 @@
+.header{
+    margin: 0;
+    width: 100%;
+    background-color: blue;
+    /* height: 15vw; */
+    padding: 0.7rem;
+    /* position: fixed; */
+    text-align: center;
+}
+
+.header--title{
+    margin: 0;
+    display: inline-block;
+    font-size: 3rem;
+    color: yellow;
+}
+
+.header--sun{
+    animation: rotation 8s infinite linear;
+    display: inline-block;
+    height: 70px;
+    max-width: none;
+    padding: 0;
+}
+
+.sunny{
+    background-color: yellow;
+}
+
+
+@keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}

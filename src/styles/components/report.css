@@ -1,0 +1,41 @@
+.report{
+    display: flex;
+    text-align: center;
+    color: orange;
+    flex-direction: column;
+}
+
+.report--form{
+    width: 100vw;
+    padding: 2rem;
+}
+
+.report--form > input{
+    width: 50vw;
+    height: 2rem;
+}
+
+.report--results{
+    font-size: 3rem;
+}
+
+.sunny{
+    background-image: url("https://pbs.twimg.com/media/Cwz26OMXgAAxg84.jpg");
+}
+.mostly-sunny{
+    background-image: url("https://photo-cdn.urdupoint.com/media/2016/10/_3/730x425/pic_1476454632_1.jpg");
+}
+.rain{
+    background-image: url("https://https://o.aolcdn.com/images/dims3/GLOB/crop/7811x3913+0+1057/resize/630x315!/format/jpg/quality/85/http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F797b63432a795ee9b5889a4042f3e5b1%2F206080469%2Frain-on-rainbow-umbrella-picture-id846986114-cdn.urdupoint.com/media/2016/10/_3/730x425/pic_1476454632_1.jpg");
+}
+.storms{
+    background-image: url("https://photo-cdn.https://www.carbonbrief.org/wp-content/uploads/2017/11/storm-uk-1-583x372.jpg.com/media/2016/10/_3/730x425/pic_1476454632_1.jpg");
+}
+.sunny-storm{
+    background-image: url("https://i.aiircdn.com/weather/colour/10.png");
+}
+.default-weather{
+    background-image: url("https://cdn.pastemagazine.com/www/system/images/photo_albums/weird-weather-/large/10478918024-efdf1e1e47-z.jpg?1384968217")
+}   
+
+
